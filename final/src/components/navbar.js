@@ -31,6 +31,11 @@ function Navbar() {
                   School Login Page
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page 2" href="#"><script src="/Form.js" type='text/javascript' />
+                  To-Do List
+                </a>
+              </li>
             </ul>
           </div>
         </div>

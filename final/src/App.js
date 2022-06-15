@@ -19,7 +19,6 @@ function App() {
     <Router>
     <div className="wrapper">
       <Navbar />
-      <h3>Weekly FE coding assignment tracker</h3>
       <div className="form-and-todo-box">
       <Form/>
       {/* <Home /> */}

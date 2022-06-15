@@ -58,6 +58,8 @@ h3{
   font-size: 16px;
   padding: 5px;
   /* border: 2px solid #f92c0f; */
+  background-color: rgb(227, 199, 231);
+  border-style: groove;
 }
 
 .form-and-todo-box .input-and-button .button{
