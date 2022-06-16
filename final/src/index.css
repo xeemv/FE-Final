@@ -40,11 +40,12 @@ h3{
   width: 500px;
   margin: auto;
   height: auto;
+  background-color: rgb(218, 182, 248);
 }
 
 .form-and-todo-box .input-and-button{
   height: 45px;
-  background-color: #fff;
+  background-color: rgb(248, 225, 225);
   overflow: hidden;
   display: flex;
 }
@@ -58,7 +59,7 @@ h3{
   font-size: 16px;
   padding: 5px;
   /* border: 2px solid #f92c0f; */
-  background-color: rgb(227, 199, 231);
+  background-color: rgb(244, 224, 247);
   border-style: groove;
 }
 
