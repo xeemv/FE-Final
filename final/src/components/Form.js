@@ -93,6 +93,28 @@ export const Form = () => {
     console.log(item);
   };
 
+
+
+  // handleCheckbox
+  const handleCheckbox = (id) => {
+    let todoArray = [];
+    todos.forEach((todo) => {
+      if(todo.ID === id){
+        if(todo.completed === false){
+          todo.completed = true;
+        }
+        else if (todo.completed === true) {
+          todo.completed = false;
+        }
+      }
+      todoArray.push(todo);
+      setTodos(todoArray);
+    });
+  }
+
+
+
+
   return (
     <>
       {/* edit form component */}
@@ -148,10 +170,15 @@ export const Form = () => {
         <>
           {todos.map((individualTodo, index) => (
             <div className="todo" key={individualTodo.ID}>
+              
               {/* Checkbox and value div */}
               <div>
-                {editForm === false && <input type="checkbox" />}
-                <span>{individualTodo.TodoValue}</span>
+                {editForm === false && (
+                <input type="checkbox" checked={individualTodo.completed}
+                onChange={() => handleCheckbox(individualTodo.ID)} />
+                )}
+                <span
+                style={individualTodo.completed === true ? {textDecoration: "line-through"}:{textDecoration: "none"}}>{individualTodo.TodoValue}</span>
               </div>
 
               {/* edit and delete icon div */}
