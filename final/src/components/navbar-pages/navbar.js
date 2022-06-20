@@ -1,10 +1,51 @@
 import React from "react";
 import Home from "./Home";
+import Form from "./Form";
+import School from "./School";
+import About from "./About";
 
-function Navbar() {
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch
+} from 'react-router-dom';
+// the different routes we want access to
+
+
+
+
+
+
+const Navbar = () => {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <Router>
+      <main>
+      <Routes>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/about" exact>
+          <About />
+        </Route>
+       </Routes>
+      </main>
+     
+
+
+
+
+
+    </Router>
+  );
+}
+
+export default Navbar;
+
+
+
+      {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Navbar
@@ -40,16 +81,11 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" aria-current="page 3" href="#">
-                  To-Do List
+                  To-Do Form
                   <script src="/Form.js" type="text/javascript" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </>
-  );
-}
-
-export default Navbar;
+      </nav> */}

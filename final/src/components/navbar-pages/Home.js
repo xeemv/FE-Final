@@ -1,17 +1,17 @@
 import React from 'react'
 
-function Home() {
+const Home = () => {
   return (
     <>
       <h1>Welcome student!</h1>
-      <div class="card">
-        <div class="card-header">
+      <div className="card">
+        <div className="card-header">
           This is your personal weekly homework tracker To-Do list.
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Start Here:</h5>
+        <div className="card-body">
+          <h5 className="card-title">Start Here:</h5>
           <br />
-          <p class="card-text">
+          <h4 className="card-text">
             <ol>
                 <li>Sign in to your school's LMS by selecting the navbar "School Login Page" for quick access.
                 </li>
@@ -23,8 +23,8 @@ function Home() {
                 </li>
                
             </ol>
-          </p>
-          <a href="#" class="btn btn-primary">
+          </h4>
+          <a href="#" className="btn btn-primary">
             To-Do List
           </a>
         </div>
@@ -33,4 +33,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
