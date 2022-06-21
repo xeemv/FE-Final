@@ -1,5 +1,7 @@
 // we need useState and useEffect hooks
 import React, { useState, useEffect } from "react";
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 // icons from react icons kit
 // main Icon component
@@ -8,8 +10,9 @@ import { Icon } from "react-icons-kit";
 // icons themselves
 import { plus } from "react-icons-kit/feather/plus";
 import { edit2 } from "react-icons-kit/feather/edit2";
-import { trash } from "react-icons-kit/feather/trash";
-import userEvent from "@testing-library/user-event";
+// import { trash } from "react-icons-kit/feather/trash";
+import { trash } from "../../../node_modules/react-icons-kit/feather/trash"
+
 
 // get todos from local storage
 const getTodosFromLS = () => {
@@ -21,7 +24,7 @@ const getTodosFromLS = () => {
   }
 };
 
-export const Form = () => {
+const Form = () => {
   // todo value state
   const [todoValue, setTodoValue] = useState("");
 
@@ -56,7 +59,7 @@ export const Form = () => {
     // we are updating todos in the locoal storage whenever our todos state is changing
   }, [todos]); // useEffect will run whenever our todos state changes
 
-  // delete a todo
+  // // delete a todo
   const handleDelete = (id) => {
     // console.log(id);
     const filtered = todos.filter((todo) => {
@@ -119,7 +122,7 @@ export const Form = () => {
     <>
       {/* edit form component */}
       {/* this condition meant that this form will be visible when we start the app since the editForm state is false by default */}
-      <h3>Weekly FE coding assignment tracker</h3>
+      <h3>FE coding assignment tracker</h3>
       {editForm === false && (
         <div className="form">
           <form autoComplete="off" onSubmit={handleSubmit}>
@@ -210,3 +213,5 @@ export const Form = () => {
     </>
   );
 };
+
+export default Form;

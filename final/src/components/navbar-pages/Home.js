@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import Form from "./Form";
+import Button from 'react-bootstrap/Button';
 
 const Home = () => {
   return (
@@ -6,10 +9,10 @@ const Home = () => {
       <h1>Welcome student!</h1>
       <div className="card">
         <div className="card-header">
-          This is your personal weekly homework tracker To-Do list.
+          <h3>This is your personal homework tracker To-Do list.</h3>
         </div>
         <div className="card-body">
-          <h5 className="card-title">Start Here:</h5>
+          <h2 className="card-title">Start Here:</h2>
           <br />
           <h4 className="card-text">
             <ol>
@@ -19,14 +22,13 @@ const Home = () => {
                 <li>Identify which week you are on currently on.
                 </li>
                 <br/>
-                <li>Start tracking your assignments to stay on track with the bootcamp by selecting the button, "To-DO List" below or in the navbar.
+                <li>Start tracking your assignments to stay on track with the bootcamp by selecting "To-DO Form" in the navbar.
                 </li>
-               
+                {/* <Button variant="outline-secondary">
+                  <Link to='/Form'>To-Do Form</Link>
+                </Button> */}
             </ol>
           </h4>
-          <a href="#" className="btn btn-primary">
-            To-Do List
-          </a>
         </div>
       </div>
     </>
