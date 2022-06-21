@@ -9,10 +9,10 @@ import Container from 'react-bootstrap/Container';
 
 import {
   BrowserRouter as Router,
+  // Switch,
   Route,
   Link,
-  Routes,
-  // useRouteMatch
+  Routes
 } from 'react-router-dom';
 // the different routes we want access to
 
@@ -43,12 +43,6 @@ const Navbar = () => {
                 <Link to='/'>Home</Link>
               </li>
               <li className="nav-item">
-                {/* <a
-                  className="nav-link"
-                  aria-current="page 2"
-                  // href="https://learn.promineotech.com/login/"
-                  target="_blank"
-                > */}
                    <Link to='/School'>School</Link>              
               </li>
               <li className="nav-item">              
@@ -62,12 +56,14 @@ const Navbar = () => {
         </div>
       </nav>
 
+    {/* <Switch> */}
        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Form" element={<Form />} />
           <Route path="/School" element={<School />} />
         </Routes> 
+        {/* </Switch> */}
       </Router>
       </Container>
     </>

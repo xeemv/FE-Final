@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
+
 // icons from react icons kit
 // main Icon component
 import { Icon } from "react-icons-kit";
@@ -12,6 +13,7 @@ import { plus } from "react-icons-kit/feather/plus";
 import { edit2 } from "react-icons-kit/feather/edit2";
 // import { trash } from "react-icons-kit/feather/trash";
 import { trash } from "../../../node_modules/react-icons-kit/feather/trash"
+import Extraform from "./Extraform";
 
 
 // get todos from local storage
@@ -211,6 +213,7 @@ const Form = () => {
         </>
       )}
     </>
+    
   );
 };
 
