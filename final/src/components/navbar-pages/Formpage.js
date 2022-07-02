@@ -12,7 +12,9 @@ function Formpage() {
         </div>
         <div className="card-body">
           <h4 className="card-title">Important to note: </h4>
+          <ul>
           <li>Check the box next to your task to mark it as completed.</li>
+          </ul>
           <br />
           <h4 className="card-text">
             <Form />

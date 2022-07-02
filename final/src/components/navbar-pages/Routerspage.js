@@ -4,7 +4,9 @@ import Formpage from "./Formpage";
 import School from './School';
 import Contactpage from './Contactpage';
 import Container from "react-bootstrap/Container";
-import Navbar from 'react-bootstrap/Navbar';
+import Resources from './Resources';
+import Nav from 'react-bootstrap/Nav';
+
 import {
     BrowserRouter as Router,
     // Switch,
@@ -21,7 +23,7 @@ const Routerspage = () => {
         <>
           <Container>
             <Router>
-             <nav className="navbar navbar-expand-lg navbar-light bg-light">
+             <Nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="navbar">
                   <button
                     className="navbar-toggler"
@@ -51,9 +53,12 @@ const Routerspage = () => {
                     <li className="nav-item">
                       <Link to="/Contact-Page">Contact Page</Link>
                     </li>
+                    <li className="nav-item">
+                      <Link to="/Resources">Resources</Link>
+                    </li>
                   </div>
                 </div>
-              </nav> 
+              </Nav> 
               
     
               <Routes>
@@ -61,6 +66,7 @@ const Routerspage = () => {
                 <Route path="/Contact-Page" element={<Contactpage />} />
                 <Route path="/Formpage" element={<Formpage />} />
                 <Route path="/School" element={<School />} />
+                <Route path="/Resources" element={<Resources />} />
               </Routes>
             </Router>
           </Container>
@@ -69,3 +75,4 @@ const Routerspage = () => {
     }
 
 export default Routerspage;
+

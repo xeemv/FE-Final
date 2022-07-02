@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import Form from "./Form";
+import Formpage from './Formpage';
 import Button from 'react-bootstrap/Button';
 
 
@@ -26,7 +26,7 @@ const Home = () => {
                 <li>Identify which week you are on currently on and the materials.
                 </li>
                 <br/>
-                <li>Start tracking your assignments by selecting "To-DO Form" from the navbar or by selecting this link <Link to='/Form'>To-Do Form</Link> to navigate directly there.
+                <li>Start tracking your assignments by selecting "To-DO Form" from the navbar or by selecting this link <Link to='/Formpage'>To-Do Form</Link> to navigate directly there.
                 </li>
             </ol>
           </h4>
