@@ -1,5 +1,5 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Extraform from "./components/navbar-pages/Extraform";
+import Extraform from "./components/navbar-pages/Formpage";
 import Routerspage from "./components/navbar-pages/Routerspage";
 import Form from "../src/components/navbar-pages/Form";
 import Contact from "./components/Contact";
@@ -13,4 +13,3 @@ const App = () => {
 
 export default App;
 
-{/* <Form /> */}

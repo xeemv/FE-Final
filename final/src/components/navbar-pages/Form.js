@@ -11,7 +11,7 @@ import { plus } from "react-icons-kit/feather/plus";
 import { edit2 } from "react-icons-kit/feather/edit2";
 // import { trash } from "react-icons-kit/feather/trash";
 import { trash } from "../../../node_modules/react-icons-kit/feather/trash";
-import Extraform from "./Extraform";
+import Extraform from "./Formpage";
 
 // get todos from local storage
 const getTodosFromLS = () => {
@@ -117,7 +117,6 @@ const Form = () => {
       {/* this condition meant that this form will be visible when we start the app since the editForm state is false by default */}
       <br />
       <br />
-      <h3>FE coding assignment tracker</h3>
       {editForm === false && (
         <div className="form-and-todo-box">
           <form autoComplete="off" onSubmit={handleSubmit}>

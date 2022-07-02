@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from './Home';
-import Form from './Form';
+import Formpage from "./Formpage";
 import School from './School';
 import Contactpage from './Contactpage';
 import Container from "react-bootstrap/Container";
@@ -46,7 +46,7 @@ const Routerspage = () => {
                       <Link to="/School">School</Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/Form">To-Do Form</Link>
+                      <Link to="/Formpage">To-Do Form</Link>
                     </li>
                     <li className="nav-item">
                       <Link to="/Contact-Page">Contact Page</Link>
@@ -59,7 +59,7 @@ const Routerspage = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Contact-Page" element={<Contactpage />} />
-                <Route path="/Form" element={<Form />} />
+                <Route path="/Formpage" element={<Formpage />} />
                 <Route path="/School" element={<School />} />
               </Routes>
             </Router>

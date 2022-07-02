@@ -1,6 +1,6 @@
 import React from 'react';
 import Contact from "../Contact";
-import Extraform from './Extraform';
+
 
 const About = () => {
   return (
