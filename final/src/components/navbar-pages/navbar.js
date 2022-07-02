@@ -3,6 +3,7 @@ import Home from "./Home";
 import Form from "./Form";
 import School from "./School";
 import About from "./About";
+// import Extraform from "./Extraform";
 import Container from 'react-bootstrap/Container';
 // import Button from 'react-bootstrap/Button';
 // import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -14,6 +15,7 @@ import {
   Link,
   Routes
 } from 'react-router-dom';
+
 // the different routes we want access to
 
 
@@ -24,7 +26,7 @@ const Navbar = () => {
       <Router>
      
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="navbar">
+        {/* <div className="navbar">
           <button
             className="navbar-toggler"
             type="button"
@@ -38,7 +40,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0"> */}
               <li className="nav-item">
                 <Link to='/'>Home</Link>
               </li>
@@ -51,19 +53,18 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link to='/About'>About</Link>
               </li>
-            </ul>
-          </div>
-        </div>
+            {/* </ul>
+          </div> */}
+        {/* </div> */}
       </nav>
 
-    {/* <Switch> */}
+
        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Form" element={<Form />} />
           <Route path="/School" element={<School />} />
         </Routes> 
-        {/* </Switch> */}
       </Router>
       </Container>
     </>

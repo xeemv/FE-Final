@@ -1,14 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
-import Form from "./Form";
-import Button from 'react-bootstrap/Button';
-import Homepage from './Homepage';
 
-const Home = () => {
+function Homepage() {
   return (
     <>
-     {/* <Homepage /> */}
-     <h1>Welcome student!</h1>
+    <div>Homepage</div>
+      <h1>Welcome student!</h1>
       <div className="card">
         <div className="card-header">
           <h3>This is your personal homework tracker To-Do list.</h3>
@@ -34,4 +31,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Homepage;
