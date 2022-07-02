@@ -1,19 +1,16 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "./components/navbar-pages/navbar";
-import Extraform from './components/navbar-pages/Extraform';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Extraform from "./components/navbar-pages/Extraform";
+import Routerspage from "./components/navbar-pages/Routerspage";
+import Form from "../src/components/navbar-pages/Form";
+import Contact from "./components/Contact";
 
+const App = () => {
+ return (
+  <Routerspage />
 
-
-function App() {
-
-  return (
-    <div className="wrapper">
-      <Navbar />
-      <div className="form-and-todo-box">
-        {/* <Extraform /> */}
-      </div>
-    </div>
-  );
+ );
 }
 
 export default App;
+
+{/* <Form /> */}

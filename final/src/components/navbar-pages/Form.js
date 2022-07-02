@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from "react";
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-
-
 // icons from react icons kit
 // main Icon component
 import { Icon } from "react-icons-kit";
@@ -12,9 +10,8 @@ import { Icon } from "react-icons-kit";
 import { plus } from "react-icons-kit/feather/plus";
 import { edit2 } from "react-icons-kit/feather/edit2";
 // import { trash } from "react-icons-kit/feather/trash";
-import { trash } from "../../../node_modules/react-icons-kit/feather/trash"
+import { trash } from "../../../node_modules/react-icons-kit/feather/trash";
 import Extraform from "./Extraform";
-
 
 // get todos from local storage
 const getTodosFromLS = () => {
@@ -51,7 +48,7 @@ const Form = () => {
 
     // updating todos states
     setTodos([...todos, todoObject]);
-    // clearing input field
+    // clearing                                                                                                     field
     setTodoValue("");
   };
 
@@ -98,35 +95,31 @@ const Form = () => {
     console.log(item);
   };
 
-
-
   // handleCheckbox
   const handleCheckbox = (id) => {
     let todoArray = [];
     todos.forEach((todo) => {
-      if(todo.ID === id){
-        if(todo.completed === false){
+      if (todo.ID === id) {
+        if (todo.completed === false) {
           todo.completed = true;
-        }
-        else if (todo.completed === true) {
+        } else if (todo.completed === true) {
           todo.completed = false;
         }
       }
       todoArray.push(todo);
       setTodos(todoArray);
     });
-  }
-
-
-
+  };
 
   return (
     <>
       {/* edit form component */}
       {/* this condition meant that this form will be visible when we start the app since the editForm state is false by default */}
+      <br />
+      <br />
       <h3>FE coding assignment tracker</h3>
       {editForm === false && (
-        <div className="form">
+        <div className="form-and-todo-box">
           <form autoComplete="off" onSubmit={handleSubmit}>
             <div className="input-and-button">
               <input
@@ -138,7 +131,7 @@ const Form = () => {
               />
               <div className="button">
                 <button type="submit">
-                  <Icon icon={plus} size={20} />
+                  <Icon icon={plus} size={18}/>
                 </button>
               </div>
             </div>
@@ -151,7 +144,7 @@ const Form = () => {
       {/* this condition meant that this form will be visible when we start the app since the editForm state is false by default */}
       {/* <h3>Weekly FE coding assignment tracker</h3> */}
       {editForm === true && (
-        <div className="form">
+        <div className="form-and-todo-box">
           <form autoComplete="off" onSubmit={handleEditSubmit}>
             <div className="input-and-button">
               <input
@@ -175,15 +168,24 @@ const Form = () => {
         <>
           {todos.map((individualTodo, index) => (
             <div className="todo" key={individualTodo.ID}>
-              
               {/* Checkbox and value div */}
               <div>
                 {editForm === false && (
-                <input type="checkbox" checked={individualTodo.completed}
-                onChange={() => handleCheckbox(individualTodo.ID)} />
+                  <input
+                    type="checkbox"
+                    checked={individualTodo.completed}
+                    onChange={() => handleCheckbox(individualTodo.ID)}
+                  />
                 )}
                 <span
-                style={individualTodo.completed === true ? {textDecoration: "line-through"}:{textDecoration: "none"}}>{individualTodo.TodoValue}</span>
+                  style={
+                    individualTodo.completed === true
+                      ? { textDecoration: "line-through" }
+                      : { textDecoration: "none" }
+                  }
+                >
+                  {individualTodo.TodoValue}
+                </span>
               </div>
 
               {/* edit and delete icon div */}
@@ -212,8 +214,9 @@ const Form = () => {
           </div>
         </>
       )}
+      <br />
+      <br />
     </>
-    
   );
 };
 

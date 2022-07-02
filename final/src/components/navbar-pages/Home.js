@@ -2,12 +2,14 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Form from "./Form";
 import Button from 'react-bootstrap/Button';
-import Homepage from './Homepage';
+
+
 
 const Home = () => {
   return (
     <>
-     {/* <Homepage /> */}
+     <br />
+     <br />
      <h1>Welcome student!</h1>
       <div className="card">
         <div className="card-header">
@@ -30,6 +32,8 @@ const Home = () => {
           </h4>
         </div>
       </div>
+      <br />
+     <br />
     </>
   );
 }

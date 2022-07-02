@@ -20,7 +20,17 @@ code {
 }
 
 html,body{
+  background-color: #1ea6c2
+  /* this color was taken from the Promineo tech website */
+}
+
+/* .container{
   background-color: #ddb8f7;
+} */
+#root{
+  /* background-color: #e5e5e2 */
+  background-color: #ffffff;
+  /* this color was taken from the Promineo tech website */
 }
 
 .wrapper{
@@ -50,10 +60,11 @@ html,body{
   background-color: rgb(240, 213, 178);
 }
 
-.nav ul {
+/* .nav li {
   padding: 0;
   margin: 0;
-}
+} */
+
 h1{
   text-align: center;
 }
@@ -72,7 +83,7 @@ h3{
 
 .form-and-todo-box .input-and-button{
   height: 45px;
-  background-color: rgb(248, 225, 225);
+  background-color: rgb(231, 225, 248);
   overflow: hidden;
   display: flex;
 }
@@ -86,8 +97,8 @@ h3{
   font-size: 16px;
   padding: 5px;
   /* border: 2px solid #f92c0f; */
-  background-color: rgb(244, 224, 247);
-  border-style: groove;
+  background-color: rgb(149, 88, 158);
+  border-style: solid;
 }
 
 .form-and-todo-box .input-and-button .button{
@@ -119,8 +130,9 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid;
-  padding-bottom: 5px;
+  border: 1px solid;
+  padding: 10px;
+  background-color: #c7f0ee;
 }
 
 .todo input{
@@ -140,4 +152,9 @@ h3{
 .delete-all{
   padding: 10px;
   cursor: pointer;
+  background-color: #f18374;
+}
+.card-contact{
+  padding: 100px;
+  text-align: center;
 }
