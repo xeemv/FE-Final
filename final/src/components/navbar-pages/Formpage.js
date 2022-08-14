@@ -1,5 +1,5 @@
-import React from 'react'
-import Form from './Form';
+import React from "react";
+import Form from "./Form";
 
 function Formpage() {
   return (
@@ -13,7 +13,7 @@ function Formpage() {
         <div className="card-body">
           <h4 className="card-title">Important to note: </h4>
           <ul>
-          <li>Check the box next to your task to mark it as completed.</li>
+            <li>Check the box next to your task to mark it as completed.</li>
           </ul>
           <br />
           <h4 className="card-text">

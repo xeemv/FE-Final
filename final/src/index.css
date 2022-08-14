@@ -15,26 +15,28 @@ code {
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* background-color: #1ea6c2; */
+  /* background-color: #ffffff; */
 }
 
-html,body{
+/*html,body{
   background-color: #1ea6c2
   /* this color was taken from the Promineo tech website */
-}
+/* } */
 
 /* .container{
   background-color: #ddb8f7;
 } */
-#root{
+/* #root{ */
   /* background-color: #e5e5e2 */
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   /* this color was taken from the Promineo tech website */
-}
+/*} */
 
 .wrapper{
-  max-width: 1200px;
+  max-width: auto;
   height: auto;
   margin: 30px auto;
   overflow-x: hidden;
@@ -54,16 +56,13 @@ html,body{
   justify-content: space-between;
   gap: 2rem;
   padding: 0 1rem;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 .nav-item:hover{
   background-color: rgb(240, 213, 178);
 }
-
-/* .nav li {
-  padding: 0;
-  margin: 0;
-} */
 
 h1{
   text-align: center;
@@ -158,4 +157,20 @@ h3{
   padding: 100px;
   text-align: center;
   border-style: groove;
+  background-color: #1ea6c2;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #1ea6c2;
+  width: 100%;
+  text-align: center;
+}
+
+.header{
+  position: absolute;
+  background-color: #1ea6c2;
+  width: 100%;
+  text-align: center;
 }

@@ -11,7 +11,6 @@ import { plus } from "react-icons-kit/feather/plus";
 import { edit2 } from "react-icons-kit/feather/edit2";
 // import { trash } from "react-icons-kit/feather/trash";
 import { trash } from "../../../node_modules/react-icons-kit/feather/trash";
-import Extraform from "./Formpage";
 
 // get todos from local storage
 const getTodosFromLS = () => {
@@ -48,7 +47,7 @@ const Form = () => {
 
     // updating todos states
     setTodos([...todos, todoObject]);
-    // clearing                                                                                                     field
+    // clearing field
     setTodoValue("");
   };
 
@@ -130,7 +129,7 @@ const Form = () => {
               />
               <div className="button">
                 <button type="submit">
-                  <Icon icon={plus} size={18}/>
+                  <Icon icon={plus} size={18} />
                 </button>
               </div>
             </div>

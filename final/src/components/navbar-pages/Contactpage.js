@@ -1,6 +1,5 @@
-import React from 'react';
+import React from "react";
 import Contact from "../Contact";
-
 
 const About = () => {
   return (

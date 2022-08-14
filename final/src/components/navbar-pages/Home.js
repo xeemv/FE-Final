@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import Formpage from './Formpage';
-import Button from 'react-bootstrap/Button';
-
-
+import Formpage from "./Formpage";
+import Button from "react-bootstrap/Button";
 
 const Home = () => {
   return (
     <>
-     <br />
-     <br />
-     <h1>Welcome student!</h1>
+      <br />
+      <br />
+      <h1>Welcome student!</h1>
+      <br />
       <div className="card">
         <div className="card-header">
           <h3>This is your personal homework tracker To-Do list.</h3>
@@ -20,22 +19,38 @@ const Home = () => {
           <br />
           <h4 className="card-text">
             <ol>
-                <li>Sign in to your school's LMS by selecting the navbar "School Login Page" for quick access.
-                </li>
-                <br/>
-                <li>Identify which week you are on currently on and the materials.
-                </li>
-                <br/>
-                <li>Start tracking your assignments by selecting "To-DO Form" from the navbar or by selecting this link <Link to='/Formpage'>To-Do Form</Link> to navigate directly there.
-                </li>
+              <li>
+                Sign in to your school's LMS by selecting the navbar "School
+                Login Page" for quick access.
+              </li>
+              <br />
+              <li>
+                Identify which week you are on currently on, review the materials for the week, and start tracking your homework.
+              </li>
+              <br />
+              <li>
+                To start tracking your assignments; select "To-DO Form" from
+                the navbar or by clicking on this link{" "}
+                <Link to="/Formpage">To-Do Form</Link> to navigate directly
+                there.
+              </li>
             </ol>
+            <br />
+            <p1> 
+              Please do not give up on your new goal of becoming a software engineer.  This may be a stressful 16 weeks but there are resources to help support you.
+            </p1>
+            <br />
+            <br />
+            <p2>
+            Make sure to sign up for your weekly mentor sessions.  Here is a quick link to schedule your <a href="https://learn.promineotech.com/mod/page/view.php?id=568" target="blank>">mentor session</a> once you login.
+            </p2>
           </h4>
         </div>
       </div>
       <br />
-     <br />
+      <br />
     </>
   );
-}
+};
 
 export default Home;

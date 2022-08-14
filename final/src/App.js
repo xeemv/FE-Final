@@ -1,15 +1,10 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Extraform from "./components/navbar-pages/Formpage";
 import Routerspage from "./components/navbar-pages/Routerspage";
-import Form from "../src/components/navbar-pages/Form";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const App = () => {
- return (
-  <Routerspage />
-
- );
-}
+  return <Routerspage/>;
+};
 
 export default App;
-
