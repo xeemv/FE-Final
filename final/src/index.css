@@ -73,13 +73,6 @@ h3{
   margin-bottom: 20px;
 }
 
-.form-and-todo-box{
-  width: 500px;
-  margin: auto;
-  height: auto;
-  background-color: rgb(218, 182, 248);
-}
-
 .form-and-todo-box .input-and-button{
   height: 45px;
   background-color: rgb(231, 225, 248);
@@ -96,7 +89,7 @@ h3{
   font-size: 16px;
   padding: 5px;
   /* border: 2px solid #f92c0f; */
-  background-color: rgb(149, 88, 158);
+  background-color: rgb(235, 182, 243);
   border-style: solid;
 }
 
@@ -118,7 +111,7 @@ h3{
 .form-and-todo-box .input-and-button .button button{
   outline: none;
   cursor: pointer;
-  border: 2px solid #f92c0f;
+  border: 2px solid #f5331a;
   background-color: transparent;
   color: #fff;
 }
@@ -160,6 +153,7 @@ h3{
   background-color: #1ea6c2;
 }
 
+
 .footer{
   position: absolute;
   bottom: 0;
@@ -174,3 +168,4 @@ h3{
   width: 100%;
   text-align: center;
 }
+
