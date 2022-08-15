@@ -7,7 +7,6 @@ import Container from "react-bootstrap/Container";
 import Resources from "./Resources";
 import Nav from "react-bootstrap/Nav";
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../Footer";
 import Header from "../Header";

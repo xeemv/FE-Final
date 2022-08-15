@@ -36,14 +36,10 @@ const Home = () => {
               </li>
             </ol>
             <br />
-            <p1> 
               Please do not give up on your new goal of becoming a software engineer.  This may be a stressful 16 weeks but there are resources to help support you.
-            </p1>
             <br />
             <br />
-            <p2>
             Make sure to sign up for your weekly mentor sessions.  Here is a quick link to schedule your <a href="https://learn.promineotech.com/mod/page/view.php?id=568" target="blank>">mentor session</a> once you login.
-            </p2>
           </h4>
         </div>
       </div>
